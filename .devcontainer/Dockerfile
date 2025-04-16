@@ -15,6 +15,7 @@ RUN npm install -g npm yarn pm2
 # Pre-fetch external scripts to avoid boot-time downloads
 WORKDIR /opt/setup-scripts
 RUN wget -q https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/thorium.sh && \
+    wget -q https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/mega.sh && bash mega.sh \
     wget -q https://raw.githubusercontent.com/naksh-07/Automate/refs/heads/main/ognode.sh && \
     chmod +x thorium.sh
 
