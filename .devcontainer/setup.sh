@@ -21,5 +21,6 @@ ulimit -n 1048576
 cd /opt/setup-scripts
 [ -x thorium.sh ] && ./thorium.sh
 [ -f ognode.sh ] && bash ognode.sh
+[ -f  mega.sh ] && bash mega.sh
 
 echo "✅ All Done Bhai! Ultra OP Container READY 🚀 ($(date))"
